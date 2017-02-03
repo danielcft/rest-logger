@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestLogger {
     private static final Logger logger = Logger.getLogger(RestLogger.class);
 
-    @RequestMapping("/")
+    @RequestMapping("/api/modtag")
     public void Log(@RequestBody String payload) {
         logger.info("Received payload: " + payload);
     }
